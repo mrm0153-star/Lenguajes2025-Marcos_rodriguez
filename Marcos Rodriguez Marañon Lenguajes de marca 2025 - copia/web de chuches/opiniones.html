@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Opiniones</title>
+    <style>
+
+        @font-face {
+            font-family: Fuente;
+            src: url(fuente_texto/Fredoka-VariableFont_wdth\,wght.ttf);
+        }
+
+        body {
+            background-size: cover;
+            background-image: url(./images/fondo_chuches.jpg);
+            font-family: Fuente;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        main h2 {
+            font-family: Fuente;
+            color: maroon;
+        }
+
+        h1 {
+            font-family: Fuente;
+            text-align: center;
+            font-size: 60px;
+        }
+
+        i {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .fondo h1, .fondo p {
+            color: maroon;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .contenedor1 p {
+            text-align: left;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        #caja_titulo {
+            background: linear-gradient(to bottom, red, orangered, orange, yellow);
+            width: 900px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+        
+        #caja_titulo2 {
+            background: linear-gradient(to bottom, rgb(111, 26, 111), rgb(133, 45, 155), rgb(133, 52, 146), rgb(152, 85, 184));
+            width: 900px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Fuente;
+        }
+
+        #caja_titulo h1 {
+            text-align: center;
+            padding-top: 110px;
+            font-size: 50px;
+        }
+
+        .contenedor1 {
+            padding-left: 20px;
+            background-color: white;
+            width: 600px;
+            margin: 0 auto;
+            border: 4px solid magenta;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 200px;
+            margin-bottom: 30px;
+        }
+
+        .contenedor2 {
+            margin-top: 85px;
+            background-color: white;
+            width: 760px;
+            margin: auto;
+            border: 4px solid magenta;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: left;  
+        }
+
+        .contenedor3 {
+            margin-top: 85px;
+            background-color: white;
+            width: 755px;
+            margin: auto;
+            border: 4px solid magenta;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: left;  
+        }
+
+        section {
+            position: relative;
+            background-color: white;
+            margin: 20px 0;
+            padding: 60px 40px;
+            border-radius: 15px;
+            min-height: 300px;
+        }
+
+        .texto-arriba {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            max-width: 300px;
+            font-family: Fuente;
+            color: maroon;
+        }
+
+        .texto-centro {
+            text-align: left;
+            font-size: 18px;
+            margin: 80px auto;
+            max-width: 600px;
+        }
+
+        .opinion {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-style: italic;
+            background-color: pink;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+
+        .opinion2 {
+            font-size: 36px;
+            color: maroon;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .opinion3 {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            text-align: left;
+            margin-bottom: 20px;
+            margin: 40px 0 5px 0;
+        }
+
+        footer {
+            font-family: Fuente;
+            background-color: white;
+            width: 820px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0 auto;
+            text-decoration: none;
+            border: 4px solid magenta;
+        }
+
+        footer ul li {
+            font-family: Fuente;
+            display: inline-block;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        footer ul li:hover {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: white;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        footer ul li a {
+            font-family: Fuente;
+            color: #ff69b4;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        footer ul li a:hover {
+            color: white;
+        }
+
+        .lista-productos {
+            display: block;
+            margin: 0 ;
+            width: 300px;
+            height: 150px;
+            padding: 5px;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="fondo">
+        <div id="caja_titulo">
+        <h1><i class="fa-solid fa-comments"></i>Opiniones de nuestros clientes<i class="fa-solid fa-comments"></i></h1>
+        </div>
+
+        <div id="caja_titulo2"><p>¡Nos encanta saber lo que piensan nuestros clientes!</p></div>
+        <br><br>
+<section class="contenedor3">
+        <section class="contenedor1">
+            <div class="texto-arriba">
+                <p>Juan</p>
+            </div>
+
+            <div class="texto-centro">
+                <p>"Son unas de las mejores gominolas: suaves, ricas y con un sabor frutal que encanta."</p>
+            </div>
+
+            <div class="opinion">
+                <p>5 caramelos &#127852 &#127852 &#127852 &#127852 &#127852</p>
+            </div>
+        </section>
+
+        <section class="contenedor1">
+            <div class="texto-arriba">
+                <p>Dani</p>
+            </div>
+
+            <div class="texto-centro">
+                <p>"Gran variedad de sabores y opciones — ideales para disfrutar en cualquier momento."</p>
+            </div>
+
+            <div class="opinion">
+                <p>5 caramelos &#127852 &#127852 &#127852 &#127852 &#127852</p>
+            </div>
+        </section>
+
+        <section class="contenedor1">
+            <div class="texto-arriba">
+                <p>Ana</p>
+            </div>
+
+            <div class="texto-centro">
+                <p>"Sus gominolas tienen un sabor increíble y textura perfecta, siempre apetecen."</p>
+            </div>
+
+            <div class="opinion">
+                <p>4 caramelos &#127852 &#127852 &#127852 &#127852</p>
+            </div>
+        </section>
+</section>
+
+        <section class="contenedor2" style="margin-top: 100px;">
+            <h1 style="font-size: 40px;"><i class="fa-solid fa-comment-dots"></i>Opina sobre nosotros!!<i class="fa-solid fa-comment-dots"></i></h1>
+            <form name="formulario" action="proceso.php" method="post">
+            <br>
+            <label for="Nombre del cliente:" style="font-size: 22px;">Nombre:</label>
+            <br>
+            <input type="text" name="nombre" required>
+            <br>
+            <br>
+            <label for="Correo electrónico:" style="font-size: 22px;">Correo electrónico:</label>
+            <br>
+            <input type="text" name="nombre" required>
+            <br>
+            <br>
+            <label for="Cantidad (1 a 5):" style="font-size: 22px;">Cuantos caramelos nos das &#127852 &#127852:</label>
+            <br>
+            <input type="range" name="text" id="text">
+            <br>
+            <br>
+
+            <label for="Producto favorito:" style="font-size: 22px;" >Elija su producto favorito:</label>
+            <br>
+            <select id= "text"name="producto" size="6" multiple class="lista-productos">
+                <option value="Gominolas clásicas">Gominolas clásicas</option>
+                <option value="Ositos Haribo">Ositos Haribo</option>
+                <option value="Golosinas ácidas">Golosinas ácidas</option>
+                <option value="Tarrina variada">Tarrina variada</option>
+                <option value="Nubes dulces">Nubes dulces</option>
+                <option value="Regaliz">Regaliz</option>
+                <option value="Chicles">Chicles</option>
+                <option value="Caramelos blandos">Caramelos blandos</option>
+                <option value="Regaliz rojo">Regaliz rojo</option>
+                <option value="Regaliz negro">Regaliz negro</option>
+                <option value="Chicles de fruta">Chicles de fruta</option>
+                <option value="Chicles ácidos">Chicles ácidos</option>
+                <option value="Pica-pica">Pica-pica</option>
+            <br>
+        </select>
+
+            <br>
+            <label for="Comentarios:" style="font-size: 22px;">Por favor, estariamos encantados en conocer tu opinion!!</label>
+            <br>
+            <br>
+            <textarea name="comentarios" id="comentarios" rows="5" placeholder="Indica aquí tu opinion..." ></textarea>
+            <br>
+            <br>
+            <input type="checkbox" name="términos" id="términos">
+            <label for="Acepto las condiciones">Acepto los términos</label>
+            <br>
+            <br>
+            <a href="opinionRecibida.html">
+                <button type="button">Enviar opinión</button>
+            </a>
+            </form>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="./chuches.html">Volver al Inicio</a></li>
+                    <li><a href="./productos.html">Volver a productos</li>
+                </ul>
+            </nav>
+        </footer>
+        <br>
+    </div>
+</body>
+
+</html>

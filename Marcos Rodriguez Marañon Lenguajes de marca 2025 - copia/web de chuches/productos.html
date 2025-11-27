@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Productos</title>
+    <style>
+        @font-face {
+            font-family: Fuente;
+            src: url(fuente_texto/Fredoka-VariableFont_wdth\,wght.ttf);
+        }
+
+        body {
+            background-image: url(./images/fondo_chuches.jpg);
+            background-size: cover;
+        }
+
+        #contenedor1 {
+            padding-left: 20px;
+            background-color: white;
+            width: 800px;
+            margin: 0 auto;
+            border: 2px solid aliceblue;
+            border-radius: 15px;
+            padding-bottom: 30px;
+            border: 4px solid magenta;
+        }
+
+        #contenedor2 {
+            background-color: white;
+            width: 800px;
+            margin: 0 auto;
+            border: 2px solid aliceblue;
+            border-radius: 15px;
+            padding: 20px;
+            border: 4px solid magenta;
+        }
+
+        #caja_titulo {
+            background: linear-gradient(to bottom, red, orangered, orange, yellow);
+            width: 1400px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+
+        header h1 {
+            font-family: Fuente;
+            font-size: 70px;
+            text-align: center;
+            color: maroon;
+            padding-top: 20px;
+        }
+
+        header nav {
+            font-family: Fuente;
+            text-align: center;
+            padding-right: 40px;
+        }
+
+        main h2 {
+            font-family: Fuente;
+            color: maroon;
+        }
+
+        header ul li {
+            font-family: Fuente;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 20px;
+            background-color: lightcoral;
+            border: 3px solid red;
+            border-radius: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        header ul li a:hover {
+            background-color: lightcoral;
+            border: 3px solid lightcoral;
+            text-align: center;
+        }
+
+        main ul li {
+            font-family: Fuente;
+            display: inline-block;
+            width: 115px;
+            padding: 13px 13px;
+            margin: 11px;
+            border: 3px solid gold;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        main ul li:hover {
+            display: inline-block;
+            padding: 13px 13px;
+            background-color: #ff69b4;
+            color: gold;
+            border: 3px solid gold;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        main ul li a {
+            font-family: Fuente;
+            text-decoration: none;
+            color: maroon;
+        }
+
+        #coca_cola_pica {
+            font-family: Fuente;
+            background: linear-gradient(to top,  aqua, dodgerblue, blue);
+            width: 160px;
+            margin: 25px;
+            margin-left: 70px;
+            padding-top: 20px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #ladrillos_pica {
+            font-family: Fuente;
+            background: linear-gradient(to top, darkgreen, green, lime, lightgreen);
+            width: 160px;
+            margin: 25px;
+            padding-top: 17px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #spaghetti_pica {
+            font-family: Fuente;
+            background: linear-gradient(to top, #ffd3b6, #fec7c0, #ffaaa5, #ff8f94);
+            width: 160px;
+            margin: 25px;
+            padding-top: 17px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #fresones {
+            font-family: Fuente;
+            background: linear-gradient(to top, red, orangered, orange, yellow);
+            width: 150px;
+            margin: 30px;
+            margin-left: 70px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #ladrillos {
+            font-family: Fuente;
+            background: linear-gradient(to top, #9c13cd, #213cc4);
+            width: 150px;
+            margin: 30px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #ositos_oro {
+            font-family: Fuente;
+            background: linear-gradient(to bottom, aqua, dodgerblue, blue);
+            width: 150px;
+            margin: 30px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #chamallows {
+            font-family: Fuente;
+            background: linear-gradient(to bottom, darkgreen, green, lime, lightgreen);
+            width: 150px;
+            margin: 30px;
+            margin-left: 70px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #fresas_nata {
+            font-family: Fuente;
+            background: linear-gradient(to top, #febe10, #ffd700, #ffff00);
+            width: 150px;
+            margin: 30px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #torcidas {
+            font-family: Fuente;
+            background: linear-gradient(to top, red, orangered, orange, yellow);
+            width: 150px;
+            margin: 30px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #favorito_clasico {
+            font-family: Fuente;
+            background: linear-gradient(to bottom, #ffd3b6, #fec7c0, #ffaaa5, #ff8f94);
+            width: 170px;
+            margin: 25px;
+            margin-left: 50px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #favorito_original {
+            font-family: Fuente;
+            background: linear-gradient(to bottom, aqua, dodgerblue, blue);
+            width: 170px;
+            margin: 25px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #favorito_pica {
+            font-family: Fuente;
+            background: linear-gradient(to bottom, #9c13cd, #213cc4);
+            width: 170px;
+            margin: 25px;
+            padding-top: 13px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        h1 {
+            font-family: Fuente;
+            color: maroon;
+            text-align: center;
+            padding-right: 50px;
+        }
+
+        h3 {
+            font-family: Fuente;
+            text-align: center;
+            color: maroon;
+        }
+
+        hr {
+            color: black;
+        }
+
+        i {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        #contenedor3 {
+            background-color: #ffb6c1;
+            border: 3px solid #ff69b4;
+            border-radius: 15px;
+            width: 800px;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #contenedor3 .opiniones a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-family: Fuente;
+            font-weight: bold;
+        }
+
+        #contenedor3 .opiniones a:hover {
+            border-radius: 10px;
+            background-color: white;
+            color: #ff69b4;
+        }
+
+        #contenedor3 .imagenes img {
+            width: 50px;
+            height: 70px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        img {
+            width: 100px;
+            height: 150px;
+        }
+
+        #Acidos {
+            border: 3px solid gold;
+            background-color: #ff69b4;
+            width: 775px;
+            margin-left: auto;
+            margin-right: 50px;
+            border-radius: 20px;
+        }
+
+        #Clasicos {
+            border: 3px solid gold;
+            background-color: lightseagreen;
+            width: 775px;
+            margin-left: auto;
+            margin-right: 50px;
+            border-radius: 20px;
+        }
+
+        #Blanditos {
+            border: 3px solid gold;
+            background-color: greenyellow;
+            width: 775px;
+            margin-left: auto;
+            margin-right: 50px;
+            border-radius: 20px;
+        }
+
+        #Favoritos {
+            border: 3px solid gold;
+            background-color: lightsalmon;
+            width: 775px;
+            margin-left: auto;
+            margin-right: 50px;
+            border-radius: 20px;
+        }
+
+        #titulo_bienvenido a {
+            font-family: Fuente;
+            text-decoration: none;
+            color: #ff69b4;
+            font-size: 40px;
+        }
+
+        #titulo_bienvenido a:hover {
+            font-family: Fuente;
+            text-decoration: none;
+            color: gold;
+            font-size: 40px;
+        }
+
+        #universo_haribo {
+            border: 3px solid #ff69b4;
+            background-color: gold;
+            width: 775px;
+            margin-left: auto;
+            margin-right: 50px;
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #titulo_universo_haribo {
+            background-color: seashell;
+            padding: 5px;
+            width: 760px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #titulo_opiniones {
+            background-color: seashell;
+            padding: 5px;
+            width: 600px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .texto_universo_haribo {
+            font-family: Fuente;
+            text-align: left;
+            font-size: medium;
+            font-size: 20px;
+            margin-right: 30px;
+        }
+
+        .texto_opiniones {
+            font-family: Fuente;
+            text-align: left;
+            font-size: medium;
+            font-size: 20px;
+            margin-right: 30px;
+        }
+
+        footer {
+            font-family: Fuente;
+            background-color: white;
+            width: 800px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0 auto;
+            text-decoration: none;
+            border: 4px solid magenta;
+        }
+
+        footer ul li a {
+            font-family: Fuente;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer ul li {
+            font-family: Fuente;
+            display: inline-block;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        footer ul li:hover {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: white;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        footer ul li a {
+            font-family: Fuente;
+            text-decoration: none;
+            color: #ff69b4;
+            font-size: 20px;
+        }
+
+        footer ul li a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="caja_titulo">
+            <h1>Vive tu lado <br> dulce con <br> Haribo</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="contenedor1">
+            <div id="titulo_bienvenido">
+                <h1><a href="#contenedor2"><i class="fa-solid fa-child-reaching"></i>¡Bienvenidos al mundo Haribo!<i class="fa-solid fa-child-reaching"></i></a></h1>
+            </div>
+            <h2><i class="fa-solid fa-hand-holding-dollar"></i>Nuestros Productos<i class="fa-solid fa-hand-holding-dollar"></i></h2>
+            <nav>
+                <ul>
+                    <li>
+                        <p><a href="#Ácidos">Ácidos</a></p>
+                    </li>
+                    <li>
+                        <p><a href="#Clásicos">Clásicos</a></p>
+                    </li>
+                    <li>
+                        <p><a href="#Blandito">Blanditos</a></p>
+                    </li>
+                    <li>
+                        <p><a href="#Favorito">Favoritos</a></p>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="Ácidos">
+            <h2>Ácidos</h2>
+                <div id="Acidos">
+                    <div id="coca_cola_pica">
+                        <img src="./images/coca_cola_pica.png" alt="coca_cola_pica">
+                        <h3>Sodas Pica <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="ladrillos_pica">
+                        <img src="./images/ladrillos_pica.png" alt="ladrillos_pica">
+                        <h3>Ladrillos Pica <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="spaghetti_pica">
+                        <img src="./images/spaghetti_pica.png" alt="spaghetti_pica">
+                        <h3>Spaghetti Pica <br> (100G) <br> 1.65 €</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Clásicos">
+            <h2>Clásicos</h2>
+                <div id="Clasicos">
+                    <div id="fresones">
+                        <img src="./images/fresones.png" alt="fresones">
+                        <h3>Fresones <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="ladrillos">
+                        <img src="./images/ladrillos.png" alt="ladrillos">
+                        <h3>Ladrillos <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="ositos_oro">
+                        <img src="./images/ositos_oro.png" alt="ositos_oro">
+                        <h3>Ositos de Oro <br> (100G) <br> 1.65 €</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Blandito">
+            <h2>Blanditos</h2>
+                <div id="Blanditos">
+                    <div id="chamallows">
+                        <img src="./images/Chamallows.png" alt="Chamallows">
+                        <h3>Chamallows <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="fresas_nata">
+                        <img src="./images/fresas_nata.png" alt="fresas_nata">
+                        <h3>Fresas-Nata <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="torcidas">
+                        <img src="./images/mega_torcidas.png" alt="torcidos">
+                        <h3>Mega Torcidas <br> (100G) <br> 1.65 €</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Favorito">
+            <h2>Favoritos</h2>
+                <div id="Favoritos">
+                    <div id="favorito_clasico">
+                        <img src="./images/favorito_clasico.png" alt="favorito_clasico">
+                        <h3>Favoritos Clásico <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="favorito_original">
+                        <img src="./images/favorito_original.png" alt="favorito_original">
+                        <h3>Favoritos Original <br> (100G) <br> 1.65 €</h3>
+                    </div>
+
+                    <div id="favorito_pica">
+                        <img src="./images/favorito_pica.png" alt="favorito_pica">
+                        <h3>Favoritos Pica <br> (100G) <br> 1.65 €</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+        <section>
+        
+        <div id="contenedor2">
+            <section id="universo_haribo">
+                <section id="titulo_universo_haribo">
+                    <h2><i class="fa-solid fa-earth-oceania"></i>El Universo Haribo<i class="fa-solid fa-earth-oceania"></i></h2>
+                </section>
+                <ul>
+                    <aside>
+                        <p class="texto_universo_haribo">¡Bienvenidos al mundo dulce de Haribo!</p>
+                        <p class="texto_universo_haribo">Aquí encontrarás chuches llenas de colores, sabores y formas súper divertidas. Desde los famosos ositos de goma hasta las nubes suaves, las moras, las fresas y muchos más, cada chuche está pensada para que disfrutes y compartas momentos llenos de alegría.</p>
+                        <p class="texto_universo_haribo">Haribo lleva muchos años haciendo golosinas deliciosas que gustan tanto a niños como a mayores. Su misión es muy sencilla: ¡hacerte sonreír con cada bocado! Así que prepárate para descubrir un universo dulce donde cada chuche tiene su propia magia.</p>
+                    </aside>
+                </ul>
+            </section>    
+                
+        <div id="contenedor3">
+            <div class="opiniones">
+                <section id="titulo_opiniones">
+                    <h2>¿Quieres saber la opinión de nuestros clientes?<i class="fa-solid fa-person-burst"></i></h2>
+                </section>
+                <p class="texto_opiniones">Nuestros clientes siempre tienen algo dulce que contar.</p>
+                <p class="texto_opiniones"> Descubre sus opiniones y comentarios sobre sus chuches favoritas de Haribo, <br> y cómo cada bocado les hace sonreír y disfrutar de momentos llenos de diversión."</p>
+                <a href="./opiniones.html">Ver opiniones</a>
+            </div>
+            
+            <div class="imagenes">
+                    <img src="./images/osito.png" alt="Otro Osito">
+                    <img src="./images/osito.png" alt="Osito Haribo">
+            </div>
+        </div>
+    </main>
+
+    <br><br>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./chuches.html">Volver al Inicio</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

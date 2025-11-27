@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Página Web Chuches</title>
+    <style>
+        @font-face {
+            font-family: Fuente;
+            src: url(fuente_texto/Fredoka-VariableFont_wdth\,wght.ttf);
+        }
+
+        body {
+            background-image: url(./images/fondo_chuches.jpg);
+            background-size: cover;
+        }
+
+        #contenedor1 {
+            padding-left: 20px;
+            background-color: white;
+            width: 800px;
+            margin: 0 auto;
+            border: 2px solid aliceblue;
+            border-radius: 15px;
+            border: 4px solid magenta;
+        }
+
+        #contenedor2 {
+            padding-left: 20px;
+            background-color: white;
+            width: 800px;
+            margin: 0 auto;
+            border: 2px solid aliceblue;
+            border-radius: 15px;
+        }
+
+        #contenedor4 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            background-color: white;
+            border: 4px solid magenta;
+            border-radius: 15px;
+            margin: 0 auto;
+            width: 820px;
+            padding-top: 50px;
+        }
+
+        .boton-catalogo {
+            display: inline-block;
+            padding: 20px 60px;
+            background-color: orange;
+            color: white;
+            font-size: 22px;
+            font-family: Fuente;
+            text-decoration: none;
+            border-radius: 15px;
+            border: 6px solid orangered;
+            transition: all 0.3s ease;
+        }
+
+        .boton-catalogo:hover {
+            background-color: darkmagenta;
+            transform: scale(1.05);
+        }
+
+        #barra {
+            background-color: white;
+            width: 1400px;
+            height: 125px;
+            padding-top: 5px;
+            margin: 0 auto;
+            border: 2px solid magenta;
+        }
+
+        #caja_titulo {
+            background: linear-gradient(to bottom, red, orangered, orange, yellow);
+            width: 1400px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+
+        header h1 {
+            font-family: Fuente;
+            font-size: 70px;
+            text-align: center;
+            color: maroon;
+            padding-top: 20px;
+        }
+
+        header nav {
+            font-family: Fuente;
+            text-align: center;
+            padding-right: 40px;
+        }
+
+        header ul li {
+            font-family: Fuente;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 25px;
+            background-color: lightcoral;
+            border: 3px solid red;
+            border-radius: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        header ul li a:hover {
+            background-color: lightcoral;
+            border: 3px solid lightcoral;
+            text-align: center;
+        }
+
+        main ul li {
+            font-family: Fuente;
+            display: inline-block;
+            width: 115px;
+            padding: 13px 13px;
+            margin: 13px;
+            border: 3px solid gold;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        main ul li:hover {
+            display: inline-block;
+            padding: 13px 13px;
+            color: black;
+            border: 3px solid gold;
+            background-color: gold;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-decoration: none;
+        }
+
+        #ositos {
+            font-family: Fuente;
+            background: linear-gradient(to top, red, orangered, orange, yellow);
+            width: 150px;
+            margin: 15px;
+            padding-top: 22px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #regaliz {
+            font-family: Fuente;
+            background: linear-gradient(to top, aqua, dodgerblue, blue);
+            width: 150px;
+            margin: 15px;
+            padding-top: 20px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #coca_cola {
+            font-family: Fuente;
+            background: linear-gradient(to top, #ffc0cb, #ff69b4, #ff00bf, #ff00ff);
+            width: 150px;
+            margin: 15px;
+            padding-top: 15px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #nubes {
+            font-family: Fuente;
+            background: linear-gradient(to bottom, #662d91, #800080, #ee82ee);
+            width: 150px;
+            margin: 15px;
+            padding-top: 5px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #huevos_fritos {
+            font-family: Fuente;
+            background: linear-gradient(to top, #ffd3b6, #fec7c0, #ffaaa5, #ff8f94);
+            width: 150px;
+            margin: 15px;
+            padding-top: 15px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #fresas {
+            font-family: Fuente;
+            background: linear-gradient(to top, darkgreen, green, lime, lightgreen);
+            width: 150px;
+            margin: 14px;
+            padding-top: 15px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #moras {
+            font-family: Fuente;
+            background: linear-gradient(to top, #febe10, #ffd700, #ffff00);
+            width: 150px;
+            margin: 14px;
+            padding-top: 18px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #ladrillos {
+            font-family: Fuente;
+            background: linear-gradient(to top, #9c13cd, #213cc4);
+            width: 150px;
+            margin: 14px;
+            padding-top: 5px;
+            border: 7px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        h3 {
+            font-family: Fuente;
+            text-align: center;
+            color: maroon;
+        }
+
+        main h2 {
+            font-family: Fuente;
+            color: maroon;
+        }
+
+        i {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        footer {
+            font-family: Fuente;
+            background-color: white;
+            width: 800px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0 auto;
+            border: 4px solid rgb(174, 60, 185);
+        }
+
+        footer ul li a {
+            font-family: Fuente;
+            text-decoration: none;
+            color: maroon;
+            font-size: 20px;
+        }
+        .alineado{
+            position: absolute;
+    top: 20px;
+    left: 10px;
+    margin: 0;
+    font-size: 22px;
+    color: maroon;
+    
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="barra">
+            <figure><img src="./images/logo_haribo.png" alt="logo"></figure>
+        </div>
+
+        <div id="caja_titulo">
+            <h1>Vive tu lado <br> dulce con <br> Haribo</h1>
+        </div>
+
+        <br>
+    </header>
+
+    <main>
+        <div id="contenedor1">
+            <h2>Nuestros Productos</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <p><a href="/productos.html#Acidos"></a>Ácidos &#10024</p>
+                    </li>
+                    <li>
+                        <p><a href="/productos.html#Clasicos"></a>Clásicos &#10024</p>
+                    </li>
+                    <li>
+                        <p><a href="/productos.html#Blanditos"></a>Blanditos &#10024</p>
+                    </li>
+                    <li>
+                        <p><a href="/productos.html#Favoritos"></a>Favoritos &#10024</p>
+                    </li>
+                </ul>
+            </nav>
+            <h2>Tenemos...</h2>
+            <h3>... Desde ...</h3>
+            <div id="ositos">
+                <img src="./images/osito.png" alt="Ositos">
+                <h3>Ositos</h3>
+            </div>
+
+            <div id="regaliz">
+                <img src="./images/regaliz.png" alt="Regaliz">
+                <h3>Regaliz</h3>
+            </div>
+
+            <div id="coca_cola">
+                <img src="./images/coca_cola.png" alt="CocaCola">
+                <h3>Coca Cola</h3>
+            </div>
+
+            <div id="nubes">
+                <img src="./images/nube.png" alt="Nubes">
+                <h3>Nubes</h3>
+            </div>
+
+            <h3>... Hasta ...</h3>
+            <div id="huevos_fritos">
+                <img src="./images/huevo_frito.png" alt="Huevo frito">
+                <h3>Huevos fritos</h3>
+            </div>
+
+            <div id="fresas">
+                <img src="./images/fresa.png" alt="Fresas">
+                <h3>Fresas</h3>
+            </div>
+
+            <div id="moras">
+                <img src="./images/mora.png" alt="Moras">
+                <h3>Moras</h3>
+            </div>
+
+            <div id="ladrillos">
+                <img src="./images/ladrillo.png" alt="Ladrillos">
+                <h3>Ladrillos</h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <nav>
+            <section id="contenedor4">
+                <h2 class="alineado">Sabemos que te va a interesar...</h2>
+                
+                <a href="./productos.html" class="boton-catalogo">Ver nuestro catálogo</a>
+
+            </section>
+        </nav>
+        <br>
+    </main>
+
+    <footer>
+        <p> <b>Autores:</b><br><br>
+            Marcos Rodríguez Marañón<br>
+            Faisal Alahdab<br>
+            Alejandro Gómez Bermudo
+        </p>
+    </footer>
