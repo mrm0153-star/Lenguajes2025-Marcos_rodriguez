@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Marcos Rodriguez Marañon">
+
+  <title>Formulario 2</title>
+</head>
+
+<body style="width: 500px; margin: auto">
+
+</body>
+<header>
+  <h1>Formulario de registro al curso</h1>
+</header>
+
+<body>
+  <p>
+    <label for="nombre">Nombre completo: (requerido)</label><br>
+    <input type="text" name="nombre" />
+  </p>
+
+  <label for="email">Correo electrónico: (requerido)</label><br>
+  <input type="email" id="email" name="email" required /><br /><br />
+  <label for="edad">Edad:</label><br>
+  <input type="number" id="edad" name="edad" min="0" style="width:60px;"><br><br>
+  <label for="curso">Curso de interés:</label><br>
+  <select id="curso" name="curso">
+    <option value="informatica">Informática básica</option>
+    <option value="ofimatica">Ofimática</option>
+    <option value="programacion">Introducción a la programación</option>
+    <option value="diseño">Diseño gráfico</option>
+  </select><br><br>
+  <label>Turno preferido:</label><br>
+  <input type="radio" id="mañana" name="turno" value="mañana">
+  <label for="mañana">Mañana</label><br>
+  <input type="radio" id="tarde" name="turno" value="tarde">
+  <label for="tarde">Tarde</label><br><br>
+  <input type="checkbox" id="condiciones" name="condiciones" required>
+  <label for="condiciones">Acepto las condiciones del curso</label><br><br>
+  <label for="comentarios">Comentarios adicionales:</label><br>
+  <textarea id="comentarios" name="comentarios" rows="5" cols="40"
+    placeholder="Escribe aquí tus dudas o preferencias..."></textarea><br><br>
+
+
+  </p>
+  <button type="submit">Enviar registro</button>
+
+</body>
+
+</html>

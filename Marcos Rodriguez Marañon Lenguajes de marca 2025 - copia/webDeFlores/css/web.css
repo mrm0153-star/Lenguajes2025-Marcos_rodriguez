@@ -1,0 +1,120 @@
+         :root{
+            --verde-oscuro: #2e4a3f;
+            --beige: #f3e9d2;
+            --beige-oscuro: #e4d6b8;
+        }
+
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--beige);
+            color: var(--verde-oscuro);
+            line-height: 1.6;
+        }
+
+        #contenedor {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        #cabecera {
+            background: var(--verde-oscuro);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2{
+            color: var(--beige);
+            background-color: var(--verde-oscuro);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h3{
+            font-style: italic;
+        }
+
+        nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: var(--beige-oscuro);
+            text-align: center;
+        }
+        nav ul li{
+          display: inline-block;
+          margin: 5px;
+        }
+
+        nav ul li a{
+            display: inline-block;
+            padding:10px;
+            background: var(--verde-oscuro);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav yl li a:hover{
+            background: var(--beige);
+            color: var(--verde-oscuro);
+        }
+
+        div[id] {
+            padding: 20px;
+            margin: 20px;
+            background: var(--beige-oscuro);
+            border-radius: 8px;
+        }
+
+        .planta-contenido{
+            width:100%;
+        }
+
+        .planta-contenido img{
+            display: inline-block;
+            width:500px;
+            height: auto;
+            border-radius: 8px;
+            marigin: 10px;
+        }
+
+        .planta-contenido img{
+            display: inline-block;
+            vertical-align: top;
+            width: 480px;
+        }
+
+        .planta-contenido p{
+            display: inline-block;
+            vertical-align: top;
+            width: 480px;
+        }
+        #potos, #dracena, #costilla, #espatifilo {
+          border: 2px solid var(--verde-oscuro);
+        }
+
+        #inicio, #cuidados{
+          border: 2px solid var(--verde-oscuro);
+          border-radius: 12px;
+        }
+        footer{
+          text-align: center;
+          padding: 80px;
+          backcground: var(--verde-oscuro);
+          color:white
+        }
+
+        body{
+          background-image: url(../img/fondo_plantas.webp);
+        }
+
+        footer{
+          color:black;
+          font-size: 20px;
+          font-weight: 900;
+          background-image: url("../img/fondo_pie.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }

@@ -1,0 +1,117 @@
+.box {
+
+            box-sizing: border-box;
+            margin: auto;
+            height: 250px;
+            width: 300px;
+
+
+            padding: 10px;
+
+        }
+
+        .box1 {
+            background-color: antiquewhite;
+            border: 5px dotted black;
+            text-align: center;
+
+        }
+
+        .box2 {
+            background-color: yellow;
+            text-align: start;
+            margin: 20px auto;
+            padding: 20px;
+            width: 50%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top: 2px solid black;
+            border-left: 50px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+
+        }
+
+        .box3 {
+            background-color: darksalmon;
+            border-radius: 8px;
+            border-width: 20px;
+            border-color: black;
+            border-style: groove;
+            border-color: darksalmon;
+            text-align: right;
+
+
+        }
+
+        .box4 {
+            background-color: rgb(175, 240, 175);
+            padding: 20px;
+            border: 20px inset darkgreen;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding: 20px;
+
+        }
+
+        .box5 {
+            background-color: peachpuff;
+            border: 10px dashed orange;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 120px;
+            color: blue;
+            text-align: center;
+        }
+
+        .box6 {
+            background-color: rgb(180, 200, 255);
+            border: 20px inset navy;
+            color: navy;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 50px;
+            text-align: center;
+
+        }
+
+        .box7 {
+            background: linear-gradient(red, yellow);
+            color: (red, yellow);
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+            border-top: 10px solid crimson;
+            border-right: 10px solid crimson;
+            border-left: 10px solid crimson;
+            border-bottom: 35px solid crimson;
+            padding-top: 50px;
+
+        }
+
+        .box8 {
+            background-color: white;
+            text-align: start;
+            border: 15px solid;
+            border-bottom-color: red;
+            border-top-color: yellow;
+            border-right-color: green;
+            border-left-color: blue;
+
+
+        }
+
+        .box9 {
+            background-color: white;
+            border: 15px solid;
+            border-style: double;
+            border-color: blueviolet;
+            border-radius: 15px;
+            text-align: initial;
+
+        }

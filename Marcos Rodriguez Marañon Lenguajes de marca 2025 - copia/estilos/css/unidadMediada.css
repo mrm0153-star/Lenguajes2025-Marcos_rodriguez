@@ -1,0 +1,15 @@
+
+        body {
+            background-color: yellowgreen;
+            width: 400px;
+        }
+
+        #caja1 {
+            background-color: purple;
+            width: 50%
+        }
+
+        #caja2 {
+            background-color: darkcyan;
+            width: 50vw;
+        }

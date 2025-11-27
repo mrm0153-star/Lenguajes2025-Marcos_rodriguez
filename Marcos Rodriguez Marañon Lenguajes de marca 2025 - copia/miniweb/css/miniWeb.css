@@ -1,0 +1,45 @@
+
+        body {
+            width: 1200px;
+            margin: auto;
+            background-image: url(../random.jpg);
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .encabezado {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(36, 6, 23);
+            text-align: center;
+            font-size: 450%;
+            text-decoration: underline;
+        }
+
+        a {
+            color: pink;
+            font-size: 200%;
+        }
+
+        .enlace_a {
+            color: rgb(28, 18, 60);
+            font-size: 300%;
+
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+        .box{
+            border-radius: 40px;
+            border: 10px solid #201917;
+            background-color: rgb(130, 90, 38);
+        }
+        .caja{
+            width: 500px;
+            border-radius: 70px;
+            background-color: blue;
+            border: 10px solid #201917;
+        }

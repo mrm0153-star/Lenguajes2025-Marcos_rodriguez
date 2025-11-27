@@ -1,0 +1,158 @@
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+}
+.borde{
+    border: none;  
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.contenedor {
+    text-align: center;
+    font-family: 'Aboreto', sans-serif;
+}
+
+.tablero {
+    
+    background-image: url(../fondos/fondo-madera-natural_24837-269.avif);
+    width: 800px;
+    height: 800px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+    
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; 
+    height: 100%;
+    
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Aboreto";
+    font-size: x-large;
+    color: black;
+    
+}
+
+.negro {
+    background-color: rgb(52, 42, 23);
+}
+
+.blanco {
+    background-image:url(./fondos/fondo-madera-natural_24837-269.avif);
+}
+
+
+.borde-superior {
+    border-top: 4px solid rgb(52, 42, 23);
+}
+
+.borde-inferior {
+    border-bottom: 4px solid rgb(52, 42, 23);
+}
+
+.borde-izquierdo {
+    border-left: 4px solid rgb(52, 42, 23);
+}
+
+.borde-derecho {
+    border-right: 4px solid rgb(52, 42, 23);
+}
+
+.borde-izq-inf {
+    border-left: 4px solid rgb(52, 42, 23);
+    border-bottom: 4px solid rgb(52, 42, 23);
+}
+
+.borde-izq-sup {
+    border-left: 4px solid rgb(52, 42, 23);
+    border-top: 4px solid rgb(52, 42, 23);
+}
+
+.borde-der-inf {
+    border-right: 4px solid rgb(52, 42, 23);
+    border-bottom: 4px solid rgb(52, 42, 23);
+}
+
+.borde-der-sup {
+    border-right: 4px solid rgb(52, 42, 23);
+    border-top: 4px solid rgb(52, 42, 23);
+}
+
+
+
+.torre-blanca {
+    background-image: url('../fichas/torreblanco.png');
+    background-size: cover; 
+    background-position: center;
+}
+.alfil-blanca {
+    background-image: url('../fichas/alfilblanco.png');
+    background-size: cover; 
+    background-position: center;
+}
+.caballo-blanca {
+    background-image: url('../fichas/caballoblanco.png');
+    background-size: cover; 
+    background-position: center;
+}
+.rey-blanca {
+    background-image: url('../fichas/reyblanco.png');
+    background-size: cover; 
+    background-position: center;
+}
+.reina-blanca {
+    background-image: url('../fichas/reinablanco.png');
+    background-size: cover; 
+    background-position: center;
+}
+.peon-blanca {
+    background-image: url('../fichas/peonblanco.png');
+    background-size: cover; 
+    background-position: center;
+}
+
+
+.torre-negra {
+    background-image: url('../fichas/torrenegro.png');
+    background-size: cover; 
+    background-position: center;
+}
+.alfil-negra {
+    background-image: url('../fichas/alfilnegro.png');
+    background-size: cover; 
+    background-position: center;
+}
+.caballo-negra {
+    background-image: url('../fichas/caballonegro.png');
+    background-size: cover; 
+    background-position: center;
+}
+.rey-negra {
+    background-image: url('../fichas/reynegro.png');
+    background-size: cover; 
+    background-position: center;
+}
+.reina-negra {
+    background-image: url('../fichas/reinanegro.png');
+    background-size: cover; 
+    background-position: center;
+}
+.peon-negra {
+    background-image: url('../fichas/peonnegro.png');
+    background-size: cover; 
+    background-position: center;
+}

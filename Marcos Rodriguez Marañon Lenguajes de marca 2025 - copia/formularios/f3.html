@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marcos Rodriguez Marañon">
+
+    <title>Formulario 3</title>
+</head>
+
+<body style="width: 350px; margin: auto"></body>
+
+<header>
+    <h1>Formulario de pedido</h1>
+</header>
+
+<body>
+    <form action="http://localhost/proceso.php" method="post">
+        <p>
+            <label for="nombre">Nombre completo: (requerido)</label><br>
+            <input type="text" name="nombre" required />
+        </p>
+
+        <label for="email">Correo electrónico: (requerido)</label><br>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="date">Fecha desesada de entrega:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="color">Color de producto:</label><br>
+        <input type="color" id="color" name="color" value="#000000"><br><br>
+
+        <label for="range">Cantidad (1 a 10):</label><br>
+        <input type="range" id="range" name="range" min="0" max="10" step="1" value="6"><br><br>
+
+
+        <label>Accesorios adicionales:</label><br>
+
+        <input type="checkbox" id="funda" name="funda" value="funda">
+        <label for="funda">Funda protectora</label><br>
+
+        <input type="checkbox" id="bateria" name="bateria" value="bateria">
+        <label for="bateria">Batería adicional</label><br>
+
+        <input type="checkbox" id="soporte" name="soporte" value="soporte">
+        <label for="soporte">Soporte de mesa</label><br>
+
+        <input type="checkbox" id="kit" name="kit" value="kit">
+        <label for="kit">Kit de limpieza</label><br><br>
+
+
+
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">Acepto los términos del pedido</label><br><br>
+        <label for="comentarios">Comentarios o instrucciones especiales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="40"
+            placeholder="Indica detalles adicionales sobre tu pedido..."></textarea><br><br>
+
+
+        </p>
+        <button type="submit">Enviar pedido</button>
+    </form>
+</body>
+
+</html>

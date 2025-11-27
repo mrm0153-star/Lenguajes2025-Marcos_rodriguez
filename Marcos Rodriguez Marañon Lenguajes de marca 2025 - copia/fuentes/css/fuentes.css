@@ -1,0 +1,21 @@
+@font-face{
+            font-family: Fuente Nueva;
+            src: url(Monsieur_La_Doulaise/MonsieurLaDoulaise-Regular.ttf);
+        }
+        .fuente1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+        .fuente2{
+            font-family: Fuente Nueva;
+            font-size: 30px;
+        }
+        .fuente3{
+            font-family: "Rouge Script";
+            font-size: 30px;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            color: crimson;
+        }
