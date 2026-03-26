@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+
+<!DOCTYPE tarjeta [
+    <!ELEMENT tarjeta (frente, atras)>
+    <!ELEMENT frente (numero, titular, fecha-vencimiento, logotipo)>
+    <!ELEMENT atras (cvc, firma, datos)>
+    
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT titular (#PCDATA)>
+    <!ELEMENT fecha-vencimiento (#PCDATA)>
+    <!ELEMENT logotipo (#PCDATA)>
+    <!ELEMENT cvc (#PCDATA)>
+    <!ELEMENT firma (#PCDATA)>
+    <!ELEMENT datos (#PCDATA)>
+
+    <!ATTLIST frente parte CDATA #REQUIRED>
+    <!ATTLIST atras parte CDATA #REQUIRED>
+]>
+
+<tarjeta>
+<frente parte="frente">
+    <numero>Numero de tarjeta</numero>
+    <titular>Nombre del titular</titular>
+    <fecha-vencimiento>Fecha de vencimiento</fecha-vencimiento>
+    <logotipo>Logotipo de la entidad</logotipo>
+</frente>
+
+<atras parte="atras">
+    <cvc>Codigo de seguridad</cvc>
+    <firma>Panel de firma</firma>
+    <datos>Datos de contacto</datos>
+</atras>
+</tarjeta>

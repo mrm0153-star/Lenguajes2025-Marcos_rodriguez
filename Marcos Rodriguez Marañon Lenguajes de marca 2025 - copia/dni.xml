@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+
+<!DOCTYPE dni [
+    <!ELEMENT dni (frente, atras)>
+    <!ELEMENT frente (fotografia, dat-personales, documento)>
+    <!ELEMENT atras (domicilio, filiacion, lineas-ocr)>
+    <!ELEMENT dat-personales (nombre, apellidos, sexo, nacionalidad, fecha-nac)>
+    <!ELEMENT documento (num-soporte, fecha-validez, firma)>
+    
+    <!ELEMENT fotografia (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT sexo (#PCDATA)>
+    <!ELEMENT nacionalidad (#PCDATA)>
+    <!ELEMENT fecha-nac (#PCDATA)>
+    <!ELEMENT num-soporte (#PCDATA)>
+    <!ELEMENT fecha-validez (#PCDATA)>
+    <!ELEMENT firma (#PCDATA)>
+    <!ELEMENT domicilio (#PCDATA)>
+    <!ELEMENT filiacion (#PCDATA)>
+    <!ELEMENT lineas-ocr (#PCDATA)>
+
+    <!ATTLIST frente parte CDATA #REQUIRED>
+    <!ATTLIST atras parte CDATA #REQUIRED>
+]>
+
+<dni>
+    <frente parte="frente">
+        <fotografia>Fotografia</fotografia>
+        <dat-personales>
+            <nombre>Nombre</nombre>
+            <apellidos>Apellidos</apellidos>
+            <sexo>Sexo</sexo>
+            <nacionalidad>Nacionalidad</nacionalidad>
+            <fecha-nac>Fecha de nacimiento</fecha-nac>
+        </dat-personales>
+
+        <documento>
+            <num-soporte>Numero de soporte</num-soporte>
+            <fecha-validez>Fecha de validez</fecha-validez>
+            <firma>Firma</firma>
+        </documento>
+    </frente>
+
+    <atras parte="atras">
+        <domicilio>Domicilio</domicilio>
+        <filiacion>Filiacion</filiacion>
+        <lineas-ocr>Lineas OCR (lectura mecanica)</lineas-ocr>
+    </atras>
+</dni>

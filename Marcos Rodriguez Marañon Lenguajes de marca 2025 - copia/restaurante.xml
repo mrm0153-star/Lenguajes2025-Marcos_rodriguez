@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+
+<!DOCTYPE item [
+    <!ELEMENT item (menu+)>
+    <!ELEMENT menu (entrante+, principal+, postre+, ingredientes+, precio)>
+    
+    <!ELEMENT entrante (#PCDATA)>
+    <!ELEMENT ingredientes (#PCDATA)>
+    <!ELEMENT principal (#PCDATA)>
+    <!ELEMENT postre (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    
+    <!ATTLIST menu m CDATA #REQUIRED>
+]>
+
+<item>
+    <menu m = "menu1">
+        <entrante>Entrante1</entrante>
+        <entrante>Entrante2</entrante>
+        <entrante>Entrante3</entrante>
+
+        <principal>Principal1</principal>
+        <principal>Principal2</principal>
+        <principal>Principal3</principal>
+
+        <postre>Postre1</postre>
+        <postre>Postre2</postre>
+        <postre>Postre3</postre>
+
+        <ingredientes>Ingredientes1</ingredientes>
+        <ingredientes>Ingredientes2</ingredientes>
+        <ingredientes>Ingredientes3</ingredientes>
+        
+        <precio>Precio total</precio>
+    </menu>
+
+    <menu m = "menu2">
+        <entrante>Entrante1</entrante>
+        <entrante>Entrante2</entrante>
+        <entrante>Entrante3</entrante>
+
+        <principal>Principal1</principal>
+        <principal>Principal2</principal>
+        <principal>Principal3</principal>
+
+        <postre>Postre1</postre>
+        <postre>Postre2</postre>
+        <postre>Postre3</postre>
+
+        <ingredientes>Ingredientes1</ingredientes>
+        <ingredientes>Ingredientes2</ingredientes>
+        <ingredientes>Ingredientes3</ingredientes>
+        
+        <precio>Precio total</precio>
+    </menu>
+    
+</item>

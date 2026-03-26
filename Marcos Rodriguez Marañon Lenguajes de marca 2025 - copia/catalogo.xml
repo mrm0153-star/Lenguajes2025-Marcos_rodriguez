@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+
+<!DOCTYPE catalogo [
+    <!ELEMENT catalogo (libro+)>
+    <!ELEMENT libro (titulo, fecha, autor, capitulo*)>
+    <!ELEMENT capitulo (titulocap, texto)>
+    
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT portada (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT resumen (#PCDATA)>
+    <!ELEMENT titulocap (#PCDATA)>
+    <!ELEMENT texto (#PCDATA)>
+
+    <!ATTLIST libro paginas CDATA #REQUIRED>
+]>
+
+<catalogo>
+    <libro paginas="172">
+        <titulo>Titulo</titulo>
+        <fecha>Fecha de publicacion</fecha>
+        <autor>Autor</autor>
+        <capitulo>
+            <titulocap>Capitulo 1</titulocap>
+            <texto>Resumen capitulo 1</texto>
+        </capitulo>
+        <capitulo>
+            <titulocap>Capitulo 2</titulocap>
+            <texto>Resumen capitulo 2</texto>
+        </capitulo>
+    </libro>
+    <libro paginas="298">
+        <titulo>Titulo</titulo>
+        <fecha>Fecha de publicacion</fecha>
+        <autor>Autor</autor>
+        <capitulo>
+            <titulocap>Capitulo 1</titulocap>
+            <texto>Resumen capitulo 1</texto>
+        </capitulo>
+        <capitulo>
+            <titulocap>Capitulo 2</titulocap>
+            <texto>Resumen capitulo 3</texto>
+        </capitulo>
+    </libro>
+</catalogo>

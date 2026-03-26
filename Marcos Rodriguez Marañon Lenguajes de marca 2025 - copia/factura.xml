@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+
+<!DOCTYPE factura [
+    <!ENTITY factura SYSTEM "FACTURA NÚMERO 27 - FECHA: 18/12/2013">
+    <!ELEMENT factura (numero-factura, fecha, emisor, cliente, detalle)>
+    <!ELEMENT emisor (nombre, cif, telefono)>
+    <!ELEMENT cliente (nombre, cif, telefono)>
+    <!ELEMENT detalle (codigo-articulo+, tipo+, descripcion+, cantidad+, oferta+, pvp+, importe)>
+    
+    <!ELEMENT numero-factura (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT codigo-articulo (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT oferta (#PCDATA)>
+    <!ELEMENT pvp (#PCDATA)>
+    <!ELEMENT importe (#PCDATA)>
+    
+    <!ATTLIST emisor e CDATA #REQUIRED>
+    <!ATTLIST cliente c CDATA #REQUIRED>
+    <!ATTLIST detalle d CDATA #REQUIRED>
+]>
+
+<factura>
+    <numero-factura>27</numero-factura>
+    <fecha>18/12/2013</fecha>
+
+    <emisor e = "datos del emisor">
+        <nombre>Librería Pérez</nombre>
+        <cif>44555666B</cif>
+        <telefono>777888999</telefono>
+    </emisor>
+
+    <cliente c = "datos del cliente">
+        <nombre>Biblioteca Txantrea</nombre>
+        <cif>33111222A</cif>
+        <telefono>333999444</telefono>
+    </cliente>
+
+    <detalle d = "detalles de la factura">
+        <codigo-articulo>AW1</codigo-articulo>
+        <codigo-articulo>CP5</codigo-articulo>
+
+        <tipo>Libro</tipo>
+        <tipo>DVD</tipo>
+
+        <descripcion>Analítica Web 2.0</descripcion>
+        <descripcion>Curso de HTML</descripcion>
+
+        <cantidad>1</cantidad>
+        <cantidad>2</cantidad>
+
+        <oferta>SI</oferta>
+        <oferta>NO</oferta>
+
+        <pvp>25€</pvp>
+        <pvp>30€</pvp>
+        <importe>85€</importe>
+    </detalle>
+</factura>

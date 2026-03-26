@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+
+<!DOCTYPE agenda [
+    <!ELEMENT agenda (contacto+)>
+    <!ELEMENT contacto (telefono*, nombre, apellidos, correo*)>
+    
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT correo (#PCDATA)>
+
+    <!ATTLIST contacto contacto CDATA #REQUIRED>
+]>
+
+<agenda>
+    <contacto contacto="contacto1">
+        <telefono>Numero1</telefono>
+        <nombre>Nombre1</nombre>
+        <apellidos>Apellidos1</apellidos>
+        <correo>Correo1</correo>
+    </contacto>
+
+    <contacto contacto="contacto2">
+        <telefono>Numero2</telefono>
+        <nombre>Nombre2</nombre>
+        <apellidos>Apellidos2</apellidos>
+        <correo>Correo2</correo>
+    </contacto>
+</agenda>
