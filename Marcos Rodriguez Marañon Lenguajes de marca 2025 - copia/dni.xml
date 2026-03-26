@@ -1,30 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/css" href="test.css"?>
-
-<!DOCTYPE dni [
-    <!ELEMENT dni (frente, atras)>
-    <!ELEMENT frente (fotografia, dat-personales, documento)>
-    <!ELEMENT atras (domicilio, filiacion, lineas-ocr)>
-    <!ELEMENT dat-personales (nombre, apellidos, sexo, nacionalidad, fecha-nac)>
-    <!ELEMENT documento (num-soporte, fecha-validez, firma)>
-    
-    <!ELEMENT fotografia (#PCDATA)>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellidos (#PCDATA)>
-    <!ELEMENT sexo (#PCDATA)>
-    <!ELEMENT nacionalidad (#PCDATA)>
-    <!ELEMENT fecha-nac (#PCDATA)>
-    <!ELEMENT num-soporte (#PCDATA)>
-    <!ELEMENT fecha-validez (#PCDATA)>
-    <!ELEMENT firma (#PCDATA)>
-    <!ELEMENT domicilio (#PCDATA)>
-    <!ELEMENT filiacion (#PCDATA)>
-    <!ELEMENT lineas-ocr (#PCDATA)>
-
-    <!ATTLIST frente parte CDATA #REQUIRED>
-    <!ATTLIST atras parte CDATA #REQUIRED>
-]>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="dni.xsd"?>
 <dni>
     <frente parte="frente">
         <fotografia>Fotografia</fotografia>

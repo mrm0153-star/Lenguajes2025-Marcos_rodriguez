@@ -1,47 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/css" href="test.css"?>
-
-<!DOCTYPE catalogo [
-    <!ELEMENT catalogo (libro+)>
-    <!ELEMENT libro (titulo, fecha, autor, capitulo*)>
-    <!ELEMENT capitulo (titulocap, texto)>
-    
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT fecha (#PCDATA)>
-    <!ELEMENT portada (#PCDATA)>
-    <!ELEMENT autor (#PCDATA)>
-    <!ELEMENT resumen (#PCDATA)>
-    <!ELEMENT titulocap (#PCDATA)>
-    <!ELEMENT texto (#PCDATA)>
-
-    <!ATTLIST libro paginas CDATA #REQUIRED>
-]>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="catalogo.xsd"?>
 <catalogo>
-    <libro paginas="172">
-        <titulo>Titulo</titulo>
-        <fecha>Fecha de publicacion</fecha>
-        <autor>Autor</autor>
+    <libro paginas="100">
+        <titulo>Libro1</titulo>
+        <precio>19.50</precio>
+        <fecha>17/03/2025</fecha>
+        <autor>Autor1</autor>
         <capitulo>
-            <titulocap>Capitulo 1</titulocap>
-            <texto>Resumen capitulo 1</texto>
+            <titulocap>1</titulocap>
+            <texto></texto>
         </capitulo>
         <capitulo>
-            <titulocap>Capitulo 2</titulocap>
-            <texto>Resumen capitulo 2</texto>
+            <titulocap>2</titulocap>
+            <texto></texto>
         </capitulo>
     </libro>
-    <libro paginas="298">
-        <titulo>Titulo</titulo>
-        <fecha>Fecha de publicacion</fecha>
-        <autor>Autor</autor>
+
+    <libro paginas="120">
+        <titulo>Libro2</titulo>
+        <precio>13.50</precio>
+        <fecha>08/11/2023</fecha>
+        <autor>Autor2</autor>
         <capitulo>
-            <titulocap>Capitulo 1</titulocap>
-            <texto>Resumen capitulo 1</texto>
+            <titulocap>1</titulocap>
+            <texto></texto>
         </capitulo>
         <capitulo>
-            <titulocap>Capitulo 2</titulocap>
-            <texto>Resumen capitulo 3</texto>
+            <titulocap>2</titulocap>
+            <texto></texto>
         </capitulo>
     </libro>
 </catalogo>

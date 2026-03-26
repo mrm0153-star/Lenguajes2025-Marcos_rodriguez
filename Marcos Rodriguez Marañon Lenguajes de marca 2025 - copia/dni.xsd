@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="dni">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="frente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fotografia" type="xs:string" />
+                            <xs:element name="dat-personales">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="apellidos" type="xs:string" />
+                                        <xs:element name="sexo" type="xs:string" />
+                                        <xs:element name="nacionalidad" type="xs:string" />
+                                        <xs:element name="fecha-nac" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="documento">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="num-soporte" type="xs:string" />
+                                        <xs:element name="fecha-validez" type="xs:string" />
+                                        <xs:element name="firma" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                            <xs:attribute name="parte" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="atras">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="domicilio" type="xs:string" />
+                            <xs:element name="filiacion" type="xs:string" />
+                            <xs:element name="lineas-ocr" type="xs:string" />
+                        </xs:sequence>
+                            <xs:attribute name="parte" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

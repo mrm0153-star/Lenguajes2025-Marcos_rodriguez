@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numero-factura" type="xs:string" />
+                <xs:element name="fecha" type="xs:string" />
+
+                <xs:element name="emisor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="cif" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                            <xs:attribute name="e" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="cliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="cif" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                            <xs:attribute name="c" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="detalle">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="codigo-articulo" type="xs:string" maxOccurs="unbounded" />
+                            <xs:element name="tipo" type="xs:string" maxOccurs="unbounded" />
+                            <xs:element name="descripcion" type="xs:string" maxOccurs="unbounded" />
+                            <xs:element name="cantidad" type="xs:string" maxOccurs="unbounded" />
+                            <xs:element name="oferta" type="xs:string" maxOccurs="unbounded" />
+                            <xs:element name="pvp" type="xs:string" maxOccurs="unbounded" />
+                            <xs:element name="importe" type="xs:string" />
+                        </xs:sequence>
+                            <xs:attribute name="d" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

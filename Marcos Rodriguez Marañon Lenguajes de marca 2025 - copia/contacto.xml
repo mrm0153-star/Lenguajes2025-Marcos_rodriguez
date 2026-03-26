@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/css" href="test.css"?>
-
-<!DOCTYPE agenda [
-    <!ELEMENT agenda (contacto+)>
-    <!ELEMENT contacto (telefono*, nombre, apellidos, correo*)>
-    
-    <!ELEMENT telefono (#PCDATA)>
-    <!ELEMENT nombre (#PCDATA)>
-    <!ELEMENT apellidos (#PCDATA)>
-    <!ELEMENT correo (#PCDATA)>
-
-    <!ATTLIST contacto contacto CDATA #REQUIRED>
-]>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="contacto.xsd"?>
 <agenda>
     <contacto contacto="contacto1">
         <telefono>Numero1</telefono>

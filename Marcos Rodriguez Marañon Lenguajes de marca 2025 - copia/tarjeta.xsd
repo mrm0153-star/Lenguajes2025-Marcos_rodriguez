@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tarjeta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="frente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="numero" type="xs:string" />
+                            <xs:element name="titular" type="xs:string" />
+                            <xs:element name="fecha-vencimiento" type="xs:string" />
+                            <xs:element name="logotipo" type="xs:string" />
+                        </xs:sequence>
+                            <xs:attribute name="parte" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="atras">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cvc" type="xs:string" />
+                            <xs:element name="firma" type="xs:string" />
+                            <xs:element name="datos" type="xs:string" />
+                        </xs:sequence>
+                            <xs:attribute name="parte" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
