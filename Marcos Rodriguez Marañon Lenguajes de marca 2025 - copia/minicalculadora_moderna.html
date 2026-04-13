@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Codificación -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título -->
+    <title>Calculadora Moderna</title>
+</head>
+<body>
+
+    <!-- Inputs -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+
+    <!-- Botón -->
+    <button id="calcularBtn">Calcular</button><br>
+
+    <!-- Resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+
+        // Se añade el evento directamente con una función flecha
+        document.getElementById("calcularBtn").addEventListener("click", () => {
+
+            // Obtención de valores
+            const numero1 = Number(document.getElementById("numero1").value);
+            const numero2 = Number(document.getElementById("numero2").value);
+            
+            // Operaciones
+            const suma = numero1 + numero2;
+            const producto = numero1 * numero2;
+
+            // Operador ternario para el mayor
+            const mayor = 
+                numero1 === numero2 
+                ? "Los números son iguales" 
+                : Math.max(numero1, numero2);
+            
+            // Mostrar resultados
+            document.getElementById("suma").textContent = suma;
+            document.getElementById("producto").textContent = producto;
+            document.getElementById("mayor").textContent = mayor;
+        });
+
+    </script>
+</body>
+</html>

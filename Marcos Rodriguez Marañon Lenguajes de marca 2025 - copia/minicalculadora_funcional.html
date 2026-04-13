@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive para móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título -->
+    <title>Calculadora Funcional</title>
+</head>
+<body>
+
+    <!-- Inputs -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+
+    <!-- Botón con eventListener (mejor práctica que onclick) -->
+    <button id="calcularBtn">Calcular</button><br>
+
+    <!-- Resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+
+        // Función reutilizable para obtener un número desde un input por su ID
+        const getNumber = (id) => 
+            Number(document.getElementById(id).value);
+
+        // Función reutilizable para escribir texto en un elemento
+        const setText = (id, value) => 
+            document.getElementById(id).textContent = value;
+        
+        // Función principal
+        const calcular = () => {
+
+            // Desestructuración de array para obtener ambos números
+            const [numero1, numero2] = [
+                getNumber("numero1"), 
+                getNumber("numero2")
+            ];
+            
+            // Objeto que contiene las operaciones (estilo funcional/modular)
+            const operaciones = {
+
+                // Función suma
+                suma: (a, b) => a + b,
+
+                // Función producto
+                producto: (a, b) => a * b,
+
+                // Función para obtener el mayor
+                mayor: (a, b) => 
+                    (a === b 
+                        ? "Los números son iguales" 
+                        : Math.max(a, b))
+            };
+            
+            // Se ejecutan las funciones y se muestran resultados
+            setText("suma", operaciones.suma(numero1, numero2));
+            setText("producto", operaciones.producto(numero1, numero2));
+            setText("mayor", operaciones.mayor(numero1, numero2));
+        };
+        
+        // Evento del botón
+        document
+            .getElementById("calcularBtn")
+            .addEventListener("click", calcular);
+
+    </script>
+</body>
+</html>
